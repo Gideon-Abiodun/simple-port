@@ -30,9 +30,9 @@
     display: flex;
 }
 
-/* .navbar li {
+.navbar li {
     position: relative;
-} */
+}
 
 .navbar a {
     color: #161616;
