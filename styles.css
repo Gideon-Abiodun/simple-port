@@ -30,18 +30,18 @@
     display: flex;
 }
 
-.navbar li {
+.navbar .lists {
     position: relative;
 }
 
-.navbar a {
+.navbar .links {
     color: #161616;
     font-weight: 500;
     font-size: 1rem;
     padding: 10px 20px;
 }
 
-.navbar a::after {
+.navbar .links::after {
     content: '';
     position: absolute;
     width: 0;
@@ -52,7 +52,7 @@
     transition: ease 0.42s;
 }
 
-.navbar a:hover::after {
+.navbar .links:hover::after {
     width: 100%;
 }
 
@@ -69,12 +69,12 @@
     display: inline-flex;
     justify-content: center;
     font-weight: 600;
-    height: 60px;
+    /* height: 50px; */
     line-height: 60px;
     background: #ef0454;
     color: #fff;
     border-radius: 10px;
-    padding: 0 38px;
+    padding: 0 20px;
     text-transform: uppercase;
     transition: all 0.34s;
 }
@@ -84,7 +84,7 @@
     transform: translateY(-10px);
 }
 
-section {
+.sect {
     padding: 0 16%;
 }
 
@@ -102,7 +102,7 @@ section {
 
 .text {
     padding-top: 70px;
-    margin: 0 5rem;
+    margin: 0 6rem;
 }
 
 .text .slide {
@@ -190,6 +190,7 @@ section {
 .btn-two .play i:hover {
     background: #ef0454;
     color: #fff;
+    transform: translateY(-20%);
 }
 
 /* .social {
@@ -221,7 +222,7 @@ section {
         transition: 0.2s;
     }
 
-    section {
+    .sect {
         padding: 0.2%;
         transition: 0.2s;
     }
@@ -289,7 +290,7 @@ section {
         transition: all 0.35s ease;
     }
 
-    .navbar a {
+    .navbar .links {
         display: block;
         padding: 1rem;
         margin: 1.3rem;
@@ -297,11 +298,11 @@ section {
         border-left: 2px solid #fff;  
     }
 
-    .navbar a:hover {
+    .navbar .links:hover {
         background: #fff;
         color: #ef0454;
     }
-    .navbar a::after {
+    .navbar .links::after {
         display: none;
     }
 
@@ -320,8 +321,13 @@ section {
             font-size: 1.8rem;
             transition: 0.2s;
         }
+
+        .btn {
+            height: auto;
+            padding: 0 15px;
+        }
     
-    section {
+    .sect {
         padding: 0 3%;
     }
 
